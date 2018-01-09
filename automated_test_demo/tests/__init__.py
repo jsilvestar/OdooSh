@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import project_test
+from . import test_project

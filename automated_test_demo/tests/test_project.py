@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-import odoo.tests
+from odoo.tests import common
 
 
-class ProjectTest():
+class TestProject(common.TransactionCase):
 
-    def test_project_creation(self):
+    def create_data(self):
         # Create a new project with the test
-        test_project = self.env['project.project1'].sudo().create({
+        test_project = self.env['project.project'].sudo().create({
             'name': 'TestProject'
         })
 
