@@ -8,7 +8,7 @@ class ProjectTest():
 
     def test_project_creation(self):
         # Create a new project with the test
-        test_project = self.env['project.project'].sudo().create({
+        test_project = self.env['project.project1'].sudo().create({
             'name': 'TestProject'
         })
 
