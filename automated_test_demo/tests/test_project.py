@@ -6,7 +6,7 @@ from odoo.tests import common
 
 class TestProject(common.TransactionCase):
 
-    def create_data(self):
+    def test_create_data(self):
         # Create a new project with the test
         test_project = self.env['project.project'].sudo().create({
             'name': 'TestProject'
