@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "extend_selection_demo",
+    'name': "Automated test demo",
 
     'summary': """
-        Tutorial showing you how to extend existing selections in Odoo""",
+        Example module to show you how to create tests in Odoo""",
 
     'description': """
-        Tutorial showing you how to extend existing selections in Odoo
+        Example module to show you how to create tests in Odoo
     """,
 
     'author': "Yenthe Van Ginneken",
@@ -19,9 +19,5 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['hr', 'contacts'],
-
-    # always loaded
-    'data': [
-    ],
+    'depends': ['project'],
 }
