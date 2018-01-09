@@ -18,8 +18,10 @@ class TestProject(common.TransactionCase):
             'project_id': test_project.id
         })
 
-        # Check if everything is fine
+        # Check if the project name and the task name match
         self.assertEqual(test_project.name, 'TestProject')
         self.assertEqual(test_project_task.name, 'ExampleTask')
-        self.assertEqual(test_project_task.project_id, test_project_task.id)
-        print('This is a succes')
+        # Check if the project assigned to the task is in fact the correct id
+        self.assertEqual(test_project_task.project_id.id, test_project.id)
+        # Do a little print to show it visually for this demo - in production you don't really need this.
+        print('Your test was succesfull!')
